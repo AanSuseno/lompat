@@ -1,0 +1,124 @@
+* {
+	font-family: sans-serif;
+	box-sizing:border-box;
+	margin: 0;
+}
+
+:root {
+	--warna1: #a2d2ff;
+	--warna2: #fef9ef;
+	--warna3: #ff865e;
+	--warna4: #fee440;
+}
+
+body {
+	background: var(--warna1);
+}
+
+.container {
+	width: 100%;
+	max-width: 500px;
+	height: 80vh;
+	margin: 0 auto;
+}
+
+#game {
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+	position: absolute;
+	display: none;
+}
+
+#pelompat {
+	background: var(--warna2);
+	height: 5vh;
+	position: absolute;
+	width: 20px;
+	border-radius: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 1vh;
+}
+
+.garis {
+	width: 100%;
+	height: 1vh;
+	background: var(--warna3);
+	bottom: 2vh;
+	position: absolute;
+}
+
+.meter {
+	height: 30vh;
+	width: 30px;
+	background: #444;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 20vh;
+	left: 10px;
+	overflow: hidden;
+	display: none;
+}
+
+#meterDalam {
+	height: 20px;
+	width: 100%;
+	background: var(--warna4);
+	position: absolute;
+	bottom: 0;
+}
+
+#splash {
+	padding: 20px;
+	color: var(--warna2);
+}
+
+.sambutan {
+	padding: 5px;
+	background: var(--warna3);
+	border-radius: 10px;
+}
+
+#sambutan1, #sambutan2, #sambutan3, #sambutan4, #sambutan5, #sambutan6, #sambutan7, #sambutan99 {
+	display: none;
+}
+
+#popup {
+	position: absolute;
+	width: 90%;
+	max-width: 400px;
+	top: 2vh;
+	padding: 10px;
+	display: none;
+	background: #eee;
+	border-radius: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 5px 30px rgba(0,0,0,.3)
+}
+
+#popup p {
+	overflow: auto;
+	max-height: 50vh;
+	box-shadow: inset 0 5px 5px rgba(0,0,0,0.2);
+	text-align: justify;
+	padding: 10px;
+}
+
+#selesai {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #333;
+	height: 0;
+	color: var(--warna2);
+	padding: 10px;
+	overflow: hidden;
+	display: none;
+}
+
+a {
+	color: var(--warna2);
+}
